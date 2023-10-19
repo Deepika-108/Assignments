@@ -1,0 +1,24 @@
+1. Initialize an array with some values.
+2. Sort the array with modified sort() method.
+3. Pass a callback function as a parameter inside the sort method.
+4. It will be a comparator function that will sort in descending order.
+
+Code:
+
+const arr1 = [24.6,23.7,18.9,76.5]; 
+const arr2 = [54,23,12,97,100]; 
+  
+function arrSort(arr) { 
+    arr.sort((a,b)=>b-a); 
+    return arr; 
+} 
+  
+console.log(arrSort(arr1)); 
+console.log(arrSort(arr2));
+
+
+
+Explaination :
+
+
+A modified comparator function in this approach will returns a negative value so sorting is automatically done in reverse order.
